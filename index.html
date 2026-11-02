@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1020">
+  <title>A Reminder to Your Future Self</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+      background: #0B1020;
+      color: #F5F7FF;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+    }
+
+    main {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(34px, 6.2vw, 70px);
+      font-weight: 700;
+      line-height: 1.13;
+      letter-spacing: -1px;
+      text-wrap: balance;
+    }
+
+    h1 span {
+      color: #75ff78;
+    }
+
+    .accent {
+      width: 56px;
+      height: 4px;
+      margin: 40px auto 25px;
+      border-radius: 10px;
+      background: #75ff78;
+    }
+
+    .footer {
+      color: #8D9BB8;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 24px;
+      }
+
+      .eyebrow {
+        margin-bottom: 32px;
+        font-size: 10px;
+        letter-spacing: 2.5px;
+      }
+
+      h1 {
+        font-size: clamp(40px, 10vw, 58px);
+        letter-spacing: -1.8px;
+        line-height: 1.16;
+      }
+
+      .accent {
+        margin-top: 32px;
+        margin-bottom: 22px;
+      }
+
+      .footer {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      main {
+        animation: appear 700ms ease-out both;
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>
+      Six months from now,<br>
+      you’ll either have <span>skills</span> or <span>excuses.</span>
+    </h1>
+
+    <div class="accent"></div>
+
+    <p class="footer">STOP ENTERTAINMENT AND START BUILDING.</p>
+  </main>
+</body>
+</html>
