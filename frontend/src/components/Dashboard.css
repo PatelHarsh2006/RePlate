@@ -1,0 +1,220 @@
+.dashboard-page {
+  min-height: calc(100vh - 70px);
+  padding: 20px 7%;
+  background: #f5f8f2;
+  color: #204c36;
+}
+
+.dashboard-welcome {
+  margin: 15px 0 0;
+}
+
+
+.dashboard-welcome h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin: 0 0 14px;
+}
+
+.dashboard-welcome > p:last-child {
+  color: #647469;
+  line-height: 1.7;
+}
+
+.dashboard-grid {
+  max-width: 1100px;
+  margin: 20px 0 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  border: 1px solid #e2eadf;
+  border-radius: 16px;
+  padding: 27px 23px;
+  box-shadow: 0 8px 25px rgba(32, 76, 54, 0.05);
+}
+
+.dashboard-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e7f8df;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.dashboard-card h2 {
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.dashboard-card > p {
+  color: #69786d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.dashboard-card .dashboard-note {
+  margin-top: 18px;
+  padding-top: 13px;
+  border-top: 1px solid #edf1eb;
+  font-size: 12px;
+}
+
+.dashboard-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 11px 16px;
+  background: #276442;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dashboard-button:hover {
+  background: #1e5033;
+}
+
+.delivery-section{
+    padding: 5px 30px 16px;
+    background-color: #269b020a;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.delivery-section h2{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.delivery-section h3{
+    padding-top: 0;
+    margin-top: 0;
+    color: #a9a9a9;
+    font-size: 13.4px;
+}
+
+@media (max-width: 850px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .dashboard-page {
+    padding: 20px 5%;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.dashboard-greeting {
+  margin: 4px 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.donation-error {
+  margin: 12px 0;
+  color: #b42318;
+  font-size: 14px;
+}
+
+
+.replate-map {
+  width: 100%;
+  height: 350px;
+  margin: 12px 0;
+  border: 1px solid #dce6d9;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.donor-map {
+  height: 320px;
+}
+
+.trip-map {
+  height: 430px;
+  margin: 20px 0;
+}
+
+.location-button {
+  margin: 8px 0;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 7px;
+  background: #276442;
+  color: white;
+  cursor: pointer;
+}
+
+.location-button:hover {
+  background: #1e5033;
+}
+
+.pool-donation-list {
+  margin: 15px 0;
+  border-top: 1px solid #edf1eb;
+}
+
+.pool-donation-list > div {
+  padding: 10px 0;
+  border-bottom: 1px solid #edf1eb;
+}
+
+.pool-donation-list p {
+  margin: 5px 0;
+  color: #69786d;
+  font-size: 13px;
+}
+
+.trip-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 25px;
+  margin: 15px 0;
+}
+
+.trip-summary p {
+  margin: 5px 0;
+}
+
+.replate-stop-marker {
+  background: transparent;
+  border: none;
+}
+
+.replate-stop-marker div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #247346;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 2px 7px #0005;
+}
+
+@media (max-width: 560px) {
+  .replate-map {
+    height: 280px;
+  }
+
+  .trip-map {
+    height: 340px;
+  }
+}
